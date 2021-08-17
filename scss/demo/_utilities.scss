@@ -1,0 +1,50 @@
+/*-----------------------------------------------------------------------------------
+	utilities.scss
+-----------------------------------------------------------------------------------*/
+
+
+//-------------------- Fonts --------------------//
+
+// Font Family
+.body-font { font-family: $body-font !important; }
+.heading-font { font-family: $heading-font !important; }
+
+// Font Weight
+.fw-semi-bold { font-weight: 600 !important; }
+
+// Text Color
+.text-black { color: #000 !important; }
+
+
+//-------------------- Image --------------------//
+
+img {
+	&.img-full {
+		width: 100%;
+	}
+}
+
+
+//-------------------- Section ------------------//
+
+.section {
+	position: relative;
+	padding-top: $section-spacer;
+	padding-bottom: $section-spacer;
+}
+
+.section-padding-top {
+	padding-top: $section-spacer;
+}
+
+.section-padding-bottom {
+	padding-bottom: $section-spacer;
+}
+
+.section-margin-top {
+	margin-top: $section-spacer;
+}
+
+.section-margin-bottom {
+	margin-bottom: $section-spacer;
+}

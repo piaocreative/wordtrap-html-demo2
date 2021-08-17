@@ -1,0 +1,33 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: icon-box.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Icon Box Styles
+-----------------------------------------------------------------*/
+
+.icon-box {
+    display: flex;
+	align-items: center;	
+
+	.icon-wrapper {
+		width: 3rem;
+		display: inline-block;
+		font-size: 1.125rem;
+		line-height: 1;
+	}
+
+	.icon-header {
+		display: inline-block;
+		font-size: 0.875rem;
+		font-weight: 300;		
+		line-height: 1;
+
+		a, span {
+			display: block;
+		}
+	}
+}

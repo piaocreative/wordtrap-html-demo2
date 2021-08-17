@@ -1,0 +1,122 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	.widget-title {
+		font-size: 0.875rem;
+		font-weight: 700;
+		margin-bottom: 1.125rem;
+		padding-top: 0.375rem;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			display: flex;
+
+			li {
+				display: block;
+				padding: 0 0.28125rem;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					background-color: #110d1f;					
+					color: #625c76;
+					display: block;
+					line-height: 2.625rem;
+					width: 2.625rem;
+					height: 2.625rem;		
+					text-align: center;
+					@include transition(all 0.3s ease-in-out);
+		
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		.widget-content{
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		ul {
+			li {				
+				a {
+					color: $secondary;
+					display: block;
+					font-family: $body-font;
+					font-size: 0.875rem;
+					font-weight: 300;
+					line-height: 1;
+					padding: 0.5625rem 0;		
+					@include transition(all 0.3s ease-in-out);
+					
+					&:hover {
+						color: $white;
+					}
+				}
+
+				&:first-child {
+					a {
+						padding-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				display: flex;
+				align-items: center;				
+				justify-content: center;
+				background-color: #110d1f;	
+				width: 5.0625rem;
+				height: 2.625rem;
+				margin: 0 0.28125rem;
+			}
+		}
+	}
+
+	// Wdget - Contact
+	&.widget-contact {
+		.icon-box {
+			margin-bottom: 1.125rem;
+		}
+	}
+}

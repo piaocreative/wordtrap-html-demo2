@@ -1,0 +1,268 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;
+
+	@include translateY(-1px);	
+
+	// Transparent header
+	&.transparent-header {
+		background: transparent;
+		z-index: 199;
+
+		& + #content {
+			@include media-breakpoint-up(lg) {
+				top: -$header-height;
+				margin-bottom: -$header-height;
+				position: relative;
+			}
+		}
+	}
+}
+
+.nav {
+	flex-wrap: nowrap;
+}
+
+.navbar-light,
+.navbar-dark {
+	.navbar-toggler {
+		border-radius: 0;
+		border-color: transparent;
+
+		&:focus {
+			box-shadow: none;			
+		}
+	}	
+}
+
+.navbar {
+	padding: $spacer 0;
+
+	@include media-breakpoint-up(lg) {
+		padding: 0;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+.navbar-brand {
+	margin-right: 5.125rem;
+
+	img {
+		max-width: 9.625rem;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	.nav-link {
+		border-top: 3px solid transparent;
+		color: $primary-menu-font-color;
+		display: block;
+		font-family: $primary-menu-font;
+		font-weight: $primary-menu-font-weight;
+		font-size: $primary-menu-font-size;
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;	
+
+		@include transition(all 0.3s ease-in-out);
+		
+		@include media-breakpoint-up(lg) {			
+			line-height: 1;
+			padding: $primary-menu-padding 1rem;
+		}
+	}
+
+	.nav-item {
+		&.current,
+		&:hover {
+			a {
+				border-color: $theme-color;
+				color: $link-hover-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+#top-links {
+	.nav-item {			
+		@include media-breakpoint-up(lg) {
+			padding-right: $spacer * 1.875;		
+		}
+	}
+
+	a.nav-link {
+		color: $topbar-color;
+		font-size: 0.6875rem;
+		line-height: $topbar-line-height;
+		display: block;
+		
+		@include media-breakpoint-up(lg) {
+			padding: 0;		
+		}
+
+		&:hover {
+			color: $topbar-hover-color;
+		}
+	}
+
+	.dropdown-toggle {
+		&::after {
+			margin-left: $spacer * 0.75;
+		}
+	}
+
+	.dropdown-menu {
+		background: $white;
+		border: 0;
+		top: 2.625rem;
+		left: 0;
+		width: 100%;		
+		margin: 0;
+		border-top: 3px solid $link-hover-color;
+
+		@include border-radius(0);
+
+		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
+
+		@include media-breakpoint-up(lg) {
+			width: 8.75rem;
+		}
+
+		a.dropdown-item {
+			color: $topbar-color;
+			height: 1.875rem;
+			line-height: 1.875rem;
+			font-size: 0.6875rem;				
+			padding: 0 0.6875rem;
+
+			&:hover {
+				color: $topbar-hover-color;
+			}
+		}
+
+		img {
+			display: inline-block;
+			position: relative;
+			top: -1px;
+			width: 1rem;
+			height: 1rem;
+			margin-right: $spacer * 0.25;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+#top-infos {
+	color: $topbar-color;
+	display: flex;
+	font-size: 0.6875rem;
+	line-height: $topbar-line-height;
+
+	.phone-number {			
+		a {
+			color: $topbar-color;
+			font-size: 0.875rem;
+			font-weight: $font-weight-bold;
+			margin-left: 1.3125rem;
+
+			&:hover {
+				color: $topbar-hover-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+
+#top-btns {
+	@include media-breakpoint-down(lg) {
+		padding: 1rem 0;
+	}
+
+	.nav-link {
+		color: $top-btn-font-color;
+		font-size: $top-btn-font-size;
+		line-height: 1;
+		padding: 0 0.5625rem;
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+
+	.nav-item {
+		&:last-child {
+			.nav-link {
+				padding-right: 0;
+			}			
+		}
+	}
+}
+
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/

@@ -1,0 +1,22 @@
+
+/* ----------------------------------------------------------------
+
+	topbar.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for top bar. Thanks!
+-----------------------------------------------------------------*/
+
+
+#top-bar {
+	background-color: #201b30;		
+	position: relative;
+
+	@include media-breakpoint-up(lg) {
+		height: $topbar-height;
+		line-height: $topbar-line-height;
+	}
+}

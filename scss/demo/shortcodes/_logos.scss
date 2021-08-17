@@ -1,0 +1,32 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: partners.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Partners logo Styles
+-----------------------------------------------------------------*/
+
+
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.logo-item {
+		width: 100%;
+		text-align: center;
+		opacity: 0.5;
+		@include transition(opacity 0.3s ease-in-out);
+
+		&:hover {
+			opacity: 1;
+		}
+
+		img {
+			max-height: 4.625rem;
+		}
+	}
+} 

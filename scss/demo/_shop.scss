@@ -1,0 +1,253 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+.category {
+	li {
+		a {
+			color: $white;
+			display: inline-block;
+			margin-bottom: 1.875rem;
+			padding-right: 2.125rem;
+			position: relative;			
+			line-height: 1;
+
+			&:after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 1px;
+				display: block;
+				width: 0.890625rem;
+				height: 0.984375rem;				
+				background-image: url(../images/icons/category-arrow.png);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				opacity: 0;
+				@include transition(all 0.3s ease-in-out);
+			}
+
+			&:hover {
+				color: $theme-color;
+
+				&:after {
+					opacity: 1;
+				}
+			}
+
+			span {
+				display: inline-block;
+				font-size: 0.875rem;
+				margin-right: 1.875rem;
+				vertical-align: top;
+			}
+		}		
+	}	
+}
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 1.875rem;
+	position: relative;	
+
+	.product-image {
+		text-align: center;
+		position: relative;
+
+		a {
+			display: inline-block;
+		}
+		
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+
+		&:hover {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.product-price {
+		color: #1b1b1b;
+		font-family: $heading-font;
+		font-size: 1.875rem;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 1.875rem;
+
+		del {
+			color: #5b5571;
+			display: block;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1;
+			margin-bottom: 1.125rem;
+		}
+	}
+
+	.product-title {
+		color: #1b1b1b;
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1;
+		display: inline-block;
+		margin-bottom: 1.125rem;
+	}	
+
+	.product-rating {
+		margin-bottom: 1.125rem;
+
+		i {
+			color: $theme-color;
+			font-size: 0.75rem;
+
+			&.empty {
+				color: rgba($theme-color, 0.5);
+			}
+		}
+	}
+
+	.product-details {
+		padding: 2.25rem 0;
+	}
+
+	.onhot,
+	.onsale,
+	.onnew {
+		color: $theme-color;
+		font-family: $third-font;
+		font-size: 3rem;
+		line-height: 1;
+		position: absolute;
+		right: 1.875rem;
+		bottom: 1.875rem;
+		z-index: 2;
+		@include rotate(-20deg);
+	}
+
+	.add-to-cart {
+		border: $btn-border-width solid $theme-color;
+		color: $theme-color;
+		padding: 1.125rem;
+
+		&:hover,
+		&:active {
+			background-color: transparent;
+			color: $theme-color;
+
+			.btn-text {			
+				display: inline-block;
+			}
+		}
+
+		.btn-text {
+			display: none;
+			font-size: 0.75rem;
+			margin-right: 0.9375rem;
+			vertical-align: middle;
+		}
+
+		.icon-plus {
+			background-image: url(../images/icons/plus.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			display: inline-block;
+			width: 0.703125rem;
+			height: 0.703125rem;			
+			vertical-align: middle;			
+		}
+	}	
+
+	// Product Details on image
+	&.product-on-image {
+		.product-details {
+			padding: 0;
+			position: absolute;
+			left: 68%;					
+			top: 50%;
+			z-index: 2;
+			@include translateY(-50%);
+		}
+	}	
+
+	&.product-light {
+		color: $white;
+
+		.product-price {
+			color: $white;
+	
+			del {
+				color: $white;
+			}
+		}
+	
+		.product-title {
+			color: $white;
+		}	
+	
+		.product-rating {
+			i {
+				color: $white;
+	
+				&.empty {
+					color: rgba($white, 0.5);
+				}
+			}
+		}
+
+		.add-to-cart {
+			border-color: $white;	
+			color: $white;		
+	
+			&:hover,
+			&:active {
+				background-color: transparent;
+				color: $white;	
+			}	
+	
+			.icon-plus {
+				background-image: url(../images/icons/plus_white.png);
+			}
+		}	
+
+		.onhot,
+		.onsale,
+		.onnew {
+			color: $white;
+		}
+	}
+}
+
+
+/* Product Ads
+-----------------------------------------------------------------*/
+.product-ads {
+	margin-bottom: 1.875rem;
+}
