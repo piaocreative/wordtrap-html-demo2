@@ -8,39 +8,6 @@
 	Add here styles for typography. Thanks!
 -----------------------------------------------------------------*/
 
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
-
-    /*--------------------------------------------------------------
-    ## Netbook
-    --------------------------------------------------------------*/
-    @media only screen and (max-width: 1199px) {
-        font-size: 90%;
-    }
-
-    /*--------------------------------------------------------------
-    ## Tablet
-    --------------------------------------------------------------*/
-    @media only screen and (max-width: 991) {
-        font-size: 85%;
-    }
-  
-    /*--------------------------------------------------------------
-    ## Mobile
-    --------------------------------------------------------------*/
-    @media only screen and (max-width: 767px) {
-        font-size: 80%;
-    }
-    
-    /*--------------------------------------------------------------
-    ## Mini
-    --------------------------------------------------------------*/
-    @media only screen and (max-width: 480px) {
-        font-size: 75%;
-    }
-}
-
 dl, dt, dd, ol, ul, li {
 	margin: 0;
 	padding: 0;
@@ -112,6 +79,10 @@ body {
 	font-family: $body-font;
 }
 
+.content-wrap {
+    overflow: hidden;
+}
+
 iframe { border: none !important; }
 
 
@@ -127,7 +98,7 @@ h5,
 h6 {
 	color: $heading-color;
 	line-height: 1;
-	margin: 0 0 1.875rem 0;
+	margin: 0 0 $spacer * 1.875 0;
 	font-family: $heading-font;
 	font-weight: $font-weight-bold;
 }
@@ -152,7 +123,7 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 1.875rem; }
+form { margin-bottom: $spacer * 1.875; }
 
 small { font-family: $body-font; }
 

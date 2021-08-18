@@ -42,7 +42,7 @@
 -----------------------------------------------------------------*/
 
 #about-section {
-	margin-top: -0.75rem;
+	margin-top: -$spacer * 0.75;
 }
 
 
@@ -51,23 +51,55 @@
 -----------------------------------------------------------------*/
 
 .contact-form {
-    margin-bottom: 19.25rem;
+	@include media-breakpoint-up(lg) {
+    	margin-bottom: $spacer * 19.25;
+	}
 }
 
 .contact-info {
-	background-color: $body-bg;
-    height: 9.75rem;
-    width: calc(50vw - 780px + 100%);
-    right: 0;
-    position: absolute;
-    z-index: 2;
-    top: -9.75rem;
+	position: relative;	
+
+	.icon-box {
+		margin-right: $spacer * 3.375;
+		position: relative;
+		margin-bottom: 0;
+	}
+
+	@include media-breakpoint-up(lg) {				
+		height: 9.75rem;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		top: -9.75rem;		
+		margin-bottom: -$spacer * 9.75; 
+	}
+
+	&::before {
+		content: "";
+
+		@include media-breakpoint-up(xxl) {
+			background-color: #201b30;		 					
+			position: absolute;		
+			right: 0;		  
+			top: 0;
+			width: calc(50vw - 660px + 100%);
+			height: 100%;
+		}
+	}
 }
 
-.map-wrapper {
-	padding-top: $header-height;
-	width: calc(100% + 50vw - 640px);
+.map-wrapper {		
 	height: 100%;
+	width: 100%;
+	min-height: 30rem;
+
+	@include media-breakpoint-up(lg) {
+		padding-top: $header-height;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		width: calc(100% + 50vw - 650px);
+	}
 
 	.map {
 		background-image: url(../images/map.png);

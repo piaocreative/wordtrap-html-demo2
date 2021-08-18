@@ -17,9 +17,13 @@
 
 
 #page-title {
-	position: relative;
-	padding-top: 15rem;
+	position: relative;	
+	padding-top: 6.75rem;
 	padding-bottom: 6.75rem;
+
+	@include media-breakpoint-up(lg) {
+		padding-top: 15rem;
+	}
 	
 	.title {
 		display: block;		

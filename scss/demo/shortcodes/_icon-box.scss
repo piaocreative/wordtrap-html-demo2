@@ -12,6 +12,7 @@
 .icon-box {
     display: flex;
 	align-items: center;	
+	margin-bottom: $spacer * 1.125;
 
 	.icon-wrapper {
 		width: 3rem;

@@ -23,8 +23,8 @@
 		a {
 			color: $white;
 			display: inline-block;
-			margin-bottom: 1.875rem;
-			padding-right: 2.125rem;
+			margin-bottom: $spacer * 1.875;
+			padding-right: $spacer * 2.125;
 			position: relative;			
 			line-height: 1;
 
@@ -40,6 +40,7 @@
 				background-repeat: no-repeat;
 				background-size: 100%;
 				opacity: 0;
+
 				@include transition(all 0.3s ease-in-out);
 			}
 
@@ -54,7 +55,7 @@
 			span {
 				display: inline-block;
 				font-size: 0.875rem;
-				margin-right: 1.875rem;
+				margin-right: $spacer * 1.875;
 				vertical-align: top;
 			}
 		}		
@@ -65,7 +66,7 @@
 /* Product
 -----------------------------------------------------------------*/
 .product {
-	margin-bottom: 1.875rem;
+	margin-bottom: $spacer * 1.875;
 	position: relative;	
 
 	.product-image {
@@ -73,69 +74,96 @@
 		position: relative;
 
 		a {
-			display: inline-block;
+			display: block;
+
+			img {
+				width: 100%;
+			}
 		}
 		
 		> a:nth-of-type(2) {
 			opacity: 0;
-			position: absolute;
-			z-index: -1;
+			position: absolute;			
 			top: 0;
 			left: 0;
+			z-index: -1;
+
 			@include transition(all 0.3s ease-in-out);
 		}
 
 		&:hover {
-			> a:nth-of-type(2) {
-				z-index: 1;
+			> a:nth-of-type(2) {				
 				opacity: 1;
+				z-index: 1;
 			}
 		}
 	}
 
-	.product-price {
-		color: #1b1b1b;
+	.product-price {		
+		color: $white;
 		font-family: $heading-font;
 		font-size: 1.875rem;
 		font-weight: 700;
-		line-height: 1;
-		margin-bottom: 1.875rem;
+		line-height: 1;		
+
+		@include media-breakpoint-up(lg) {
+			color: #1b1b1b;
+		}
 
 		del {
-			color: #5b5571;
+			color: $white;
 			display: block;
 			font-size: 1rem;
 			font-weight: 400;
 			line-height: 1;
-			margin-bottom: 1.125rem;
+			margin-bottom: $spacer * 1.125;
+
+			@include media-breakpoint-up(lg) {
+				color: #5b5571;
+			}
 		}
 	}
 
-	.product-title {
-		color: #1b1b1b;
+	.product-title {		
 		font-family: $body-font;
 		font-size: 0.875rem;
 		font-weight: 400;
 		line-height: 1;
 		display: inline-block;
-		margin-bottom: 1.125rem;
+		margin-bottom: $spacer * 1.125;
+		
+		a {
+			color: $white;
+
+			@include media-breakpoint-up(lg) {
+				color: #1b1b1b;
+			}
+		}
 	}	
 
 	.product-rating {
-		margin-bottom: 1.125rem;
+		margin-bottom: $spacer * 1.125;
 
 		i {
-			color: $theme-color;
+			color: $white;
 			font-size: 0.75rem;
 
+			@include media-breakpoint-up(lg) {
+				color: $theme-color;
+			}
+
 			&.empty {
-				color: rgba($theme-color, 0.5);
+				color: rgba($white, 0.5);
+
+				@include media-breakpoint-up(lg) {
+					color: rgba($theme-color, 0.5);
+				}
 			}
 		}
 	}
 
 	.product-details {
-		padding: 2.25rem 0;
+		padding: $spacer * 2.25 0;
 	}
 
 	.onhot,
@@ -149,18 +177,28 @@
 		right: 1.875rem;
 		bottom: 1.875rem;
 		z-index: 2;
+
 		@include rotate(-20deg);
 	}
 
 	.add-to-cart {
-		border: $btn-border-width solid $theme-color;
-		color: $theme-color;
-		padding: 1.125rem;
+		border: $btn-border-width solid $white;
+		color: $white;
+		padding: $spacer * 1.125;
+
+		@include media-breakpoint-up(lg) {
+			border-color: $theme-color;
+			color: $theme-color;
+		}
 
 		&:hover,
 		&:active {
 			background-color: transparent;
-			color: $theme-color;
+			color: $white;
+
+			@include media-breakpoint-up(lg) {
+				color: $theme-color;
+			}
 
 			.btn-text {			
 				display: inline-block;
@@ -170,31 +208,42 @@
 		.btn-text {
 			display: none;
 			font-size: 0.75rem;
-			margin-right: 0.9375rem;
+			margin-right: $spacer * 0.9375;
 			vertical-align: middle;
 		}
 
 		.icon-plus {
-			background-image: url(../images/icons/plus.png);
+			background-image: url(../images/icons/plus_white.png);			
 			background-repeat: no-repeat;
 			background-size: 100%;
 			display: inline-block;
 			width: 0.703125rem;
 			height: 0.703125rem;			
 			vertical-align: middle;			
+
+			@include media-breakpoint-up(lg) {
+				background-image: url(../images/icons/plus.png);
+			}
 		}
 	}	
 
 	// Product Details on image
 	&.product-on-image {
-		.product-details {
-			padding: 0;
-			position: absolute;
-			left: 68%;					
-			top: 50%;
-			z-index: 2;
-			@include translateY(-50%);
-		}
+		@include media-breakpoint-up(lg) {
+			.product-details {
+				padding: 0;
+				position: absolute;
+				left: 68%;					
+				top: 50%;
+				z-index: 2;
+				
+				@include translateY(-50%);
+			}
+
+			.product-price {
+				margin-bottom: $spacer * 1.875;
+			}
+		}		
 	}	
 
 	&.product-light {
@@ -208,7 +257,7 @@
 			}
 		}
 	
-		.product-title {
+		.product-title a {
 			color: $white;
 		}	
 	
@@ -249,5 +298,5 @@
 /* Product Ads
 -----------------------------------------------------------------*/
 .product-ads {
-	margin-bottom: 1.875rem;
+	margin-bottom: $spacer * 1.875;
 }

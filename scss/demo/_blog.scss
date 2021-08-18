@@ -11,21 +11,32 @@
 
 .post {
 	position: relative;
-	margin-bottom: 1.875rem;
+	margin-bottom: $spacer * 1.875;
 }
 
 .post-thumbnail {
 	display: block;
 	position: relative;
+	overflow: hidden;
 
 	a {
 		display: block;
+
+		img {
+			@include transition(all 0.5s ease-in-out);
+		}
+
+		&:hover {
+			img {
+				@include scale(1.2);
+			}
+		}
 	}
 }
 
 .post-content {
 	position: relative;
-	padding: 1.125rem 0 0;
+	padding: $spacer * 1.125 0 0;
 	display: flex;
 	align-items: flex-start;
 	flex-direction: row;
@@ -47,8 +58,8 @@
 .entry-meta {
 	width: 8.125rem;		
 	flex: 1 0 auto;
-	margin-right: 1.125rem;
-	padding-top: 0.5625rem;
+	margin-right: $spacer * 1.125;
+	padding-top: $spacer * 0.5625;
 
 	.publish-date {
 		font-size: 2.25rem;

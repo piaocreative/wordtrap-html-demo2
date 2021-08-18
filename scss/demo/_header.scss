@@ -161,7 +161,6 @@
 		border-top: 3px solid $link-hover-color;
 
 		@include border-radius(0);
-
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
 		@include media-breakpoint-up(lg) {

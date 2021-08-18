@@ -32,9 +32,12 @@
 	}
 
 	// Copyrights
-	#copyrights {			
-		margin-right: 2.25rem;
+	#copyrights {					
 		z-index: 1;	
+
+		@include media-breakpoint-up(lg) {
+			margin-right: 2.25rem;
+		}
 	}
 
 	.widget-custom-html {
