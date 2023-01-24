@@ -79,10 +79,6 @@ body {
 	font-family: $body-font;
 }
 
-.content-wrap {
-    overflow: hidden;
-}
-
 iframe { border: none !important; }
 
 
@@ -120,6 +116,7 @@ pre,
 dl,
 dd,
 blockquote,
+q,
 address,
 table,
 fieldset,
@@ -133,4 +130,29 @@ ul li { list-style: none; }
 i { 
 	display: inline-block;
 	line-height: inherit;
+}
+
+/* Blockquote */
+blockquote,
+q {
+	color: $theme-color;
+	display: block;
+	font-size: 1.875rem;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 3.75rem;
+
+	&::before {
+		color: $theme-color;
+		font-size: 3rem;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 1;
+		display: block;
+		text-align: center;
+	}
+
+	&::after {
+		content: "";
+	}
 }

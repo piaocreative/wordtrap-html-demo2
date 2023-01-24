@@ -29,22 +29,179 @@ img {
 
 .section {
 	position: relative;
-	padding-top: $section-spacer;
-	padding-bottom: $section-spacer;
+	padding-top: $spacer * 3.125;
+	padding-bottom: $spacer * 3.125;
+
+	@include media-breakpoint-up(lg) {
+		padding-top: $section-spacer;
+		padding-bottom: $section-spacer;
+	}	
 }
 
 .section-padding-top {
-	padding-top: $section-spacer;
+	padding-top: $spacer * 3.125;
+
+	@include media-breakpoint-up(lg) {
+		padding-top: $section-spacer;
+	}
 }
 
 .section-padding-bottom {
-	padding-bottom: $section-spacer;
+	padding-bottom: $spacer * 3.125;
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: $section-spacer;
+	}
 }
 
 .section-margin-top {
-	margin-top: $section-spacer;
+	margin-top: $spacer * 3.125;
+
+	@include media-breakpoint-up(lg) {
+		margin-top: $section-spacer;
+	}
 }
 
 .section-margin-bottom {
-	margin-bottom: $section-spacer;
+	margin-bottom: $spacer * 3.125;
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: $section-spacer;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Gradient Backgrounds
+-----------------------------------------------------------------*/
+
+.bg-gradient1 {
+	background-image: linear-gradient(125deg, rgba(17,13,31,1) 70%, rgba(55,42,57,1) 100%);
+}
+
+.bg-gradient2 {
+	background-image: radial-gradient(circle, rgba(74,57,75,1) 25%, rgba(32,27,48,1) 100%);
+}
+
+.bg-gradient3 {
+	background-image: linear-gradient(125deg, rgba(104,77,91,1) 0%, rgba(17,13,31,1) 100%);
+}
+
+
+/* ----------------------------------------------------------------
+	Bootstarp Slider
+-----------------------------------------------------------------*/
+
+.slider.slider-horizontal {
+    width: 100%;
+
+    .slider-track {
+        height: 5px;
+    }
+}
+
+.slider-track {
+    background-color: $light;
+    background-image: none;
+
+    @include box-shadow(none);
+}
+
+.slider-selection,
+.slider-handle {
+    background-color: $theme-color;
+    background-image: none;
+
+    @include box-shadow(none);
+}
+
+.slider-handle {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* ----------------------------------------------------------------
+	Tabs
+-----------------------------------------------------------------*/
+
+.nav-tabs {
+	border-bottom: 0;
+	margin-bottom: 1rem;
+
+	.nav-link {
+		font-size: 1.125rem;
+		font-weight: 600;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Accordion
+-----------------------------------------------------------------*/
+
+.accordion-header {
+	margin-bottom: 0;
+}
+
+.accordion-button {
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.accordion-body {
+	padding-top: 0;
+}
+
+.accordion-item {
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------------
+	Pagination
+-----------------------------------------------------------------*/
+
+.pagination {
+	.page-item {
+		margin-left: 0.5rem;		
+
+		&.prev {
+			.page-link {
+				&::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-right: 0.625rem;
+				}
+
+				&:hover::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}			
+		}
+
+		&.next {
+			.page-link {
+				&::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-left: 0.625rem;
+				}
+
+				&:hover::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+
+		.page-link {
+			line-height: 1;
+			position: relative;
+
+			@include border-radius($pagination-border-radius);
+		}
+	}
 }

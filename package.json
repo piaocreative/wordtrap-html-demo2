@@ -1,29 +1,38 @@
 {
-  "name": "fit-survey-plugin",
-  "version": "1.0.0",
-  "description": "",
+  "name": "wordtrap-site-template",
+  "version": "2.0.0",
+  "description": "Wordtrap HTML Site Template (Demo2)",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --quiet scss/style.scss:css/style.css",
+    "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output css/ --batch --batch-suffix \".min\" \"css/*.css\" \"!css/*.min.css\"",
+    "watch": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-compile css-minify\"",
+    "build": "npm-run-all css-compile css-minify"
+  },
+  "engines": {
+    "node": ">=16"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/hdcrepos/fit-survey-plugin.git"
+    "url": "https://github.com/johnpiao171019/demo2"
   },
-  "author": "FitSmallBusiness",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/hdcrepos/fit-survey-plugin#readme",
-  "dependencies": {},
+  "keywords": [
+    "html",
+    "theme",
+    "framework",
+    "bootstrap"
+  ],
+  "author": "John Piao (https://github.com/johnpiao171019)",
+  "license": "GPL-3.0",
+  "licenseUrl": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "bugs": {
+    "url": "https://github.com/johnpiao171019/issues"
+  },
+  "homepage": "https://www.wordtrap.org",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1"
+    "clean-css-cli": "^5.6.1",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.56.0"
   }
 }

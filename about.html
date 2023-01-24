@@ -30,7 +30,7 @@
 	============================================= -->
     <title>Demo2 | Saler</title>
 </head>
-<body id="demo2">
+<body id="about-page">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -116,23 +116,62 @@
                         <!-- Primary Navigation
                         ============================================= -->
                         <ul id="primary-menu" class="navbar-nav me-auto">
-                            <li class="current nav-item">
-                                <a href="#" class="nav-link">Home</a>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>                                  
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Shop</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="shop.html" class="nav-link">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="product.html" class="nav-link">Single Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cart.html" class="nav-link">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="checkout.html" class="nav-link">Checkout</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="wishlist.html" class="nav-link">My Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>                            
+                            <li class="current nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="current nav-item">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>                                    
+                                    <li class="nav-item">
+                                        <a href="faqs.html" class="nav-link">FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Meet the team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="member.html" class="nav-link">Team Member</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">404</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Accessories</a>
-                            </li>                                    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
+                                <a href="contact.html" class="nav-link">Contact Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Archive</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="single-post.html" class="nav-link">Single Post</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul><!-- #primary-menu -->
     
@@ -162,29 +201,29 @@
 
         </header><!-- #header -->
 
-        <!-- Content
-		============================================= -->
-		<section id="content">
+        <!-- Banner
+        ============================================= -->
+        <section id="banner" class="page-banner">
 
-            <div class="content-wrap">           
+            <div class="banner-content">
 
-                <!-- Banner
-                ============================================= -->
-                <section id="banner" class="page-banner">
+                <div class="container">
 
-                    <div class="banner-wrap">
-
-                        <div class="container">
-
-                            <div id="page-title">
-                                <h1 class="title"><strong>About</strong> Us</h1>
-                            </div>
-
-                        </div>
-
+                    <div id="page-title">
+                        <h1 class="title"><strong>About</strong> Us</h1>
                     </div>
 
-                </section><!-- #banner -->
+                </div>
+
+            </div>
+
+        </section><!-- #banner -->
+
+        <!-- Content
+		============================================= -->
+		<main id="content">
+
+            <div class="page-content p-0">                
                 
                 <!-- About
                 ============================================= -->
@@ -356,7 +395,7 @@
                                         </div>
                                         <div class="d-flex flex-row flex-lg-column justify-content-between justify-content-lg-start align-items-center align-items-lg-start">
                                             <div class="product-price"><del>$200.00</del>$160</div>
-                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Add to Cart</span><span class="icon-plus"></span></a>
+                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Buy Now</span><span class="icon-plus"></span></a>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -379,7 +418,7 @@
                                         <h3 class="product-title"><a href="#">Woman's Coat</a></h3>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="product-price mb-0"><del>$200.00</del>$160</div>
-                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Add to Cart</span><span class="icon-plus"></span></a>
+                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Buy Now</span><span class="icon-plus"></span></a>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -398,7 +437,7 @@
                                         <h3 class="product-title"><a href="#">Woman's Coat</a></h3>                                            
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="product-price mb-0"><del>$200.00</del>$160</div>
-                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Add to Cart</span><span class="icon-plus"></span></a>
+                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Buy Now</span><span class="icon-plus"></span></a>
                                         </div>                                        
                                     </div>                                    
                                 </div>
@@ -417,7 +456,7 @@
                                         <h3 class="product-title"><a href="#">Woman's Coat</a></h3>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="product-price mb-0"><del>$200.00</del>$160</div>
-                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Add to Cart</span><span class="icon-plus"></span></a>
+                                            <a href="#" class="btn text-uppercase add-to-cart"><span class="btn-text">Buy Now</span><span class="icon-plus"></span></a>
                                         </div>                                        
                                     </div>                                    
                                 </div>
@@ -455,7 +494,7 @@
 
             </div>
 
-        </section><!-- #content -->
+        </main><!-- #content -->
 
         <!-- Footer
 		============================================= -->
@@ -608,8 +647,7 @@
 
                 </div>
 
-            </div><!-- #footer-bottom -->
-            
+            </div><!-- #footer-bottom -->            
 
         </footer><!-- #footer -->
 

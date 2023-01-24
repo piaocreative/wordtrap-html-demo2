@@ -10,3 +10,75 @@
 -----------------------------------------------------------------*/
 
 
+select {
+    background-color: $white;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 21 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.3999 1.5L10.3999 10.5L1.3999 1.5' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: right 20px center;
+    background-size: initial;
+    border-width: $input-border-width;
+    border-color: $input-border-color;
+    color: $input-color;
+    cursor: pointer;
+	font-size: $input-btn-font-size;
+    line-height: $input-btn-line-height;
+    padding: $input-btn-padding-y 3.125rem $input-btn-padding-y $input-btn-padding-x;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;	
+}
+
+
+// Checkbox
+input[type=checkbox],
+input[type=radio],
+.form-check-input[type=radio] {
+    appearance: none;
+    background-image: none;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;    
+    outline: 0;
+    margin-right: 8px;    
+    padding: 4px;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+
+    &:checked {
+        background-image: none;
+        background-color: $theme-color;
+        border-color: $theme-color;
+
+        &::after {
+            content: "";
+            border-bottom: 2px solid $white;
+            border-right: 2px solid $white;
+            top: 1px;
+            left: 4px;
+            width: 5px;
+            height: 8px;
+            display: block;
+            position: absolute;
+        
+            @include rotate(45deg);
+        }        
+    }
+}
+
+
+// QTY
+.quantity {	
+    width: 11.25rem;
+    align-items: center;
+    margin-right: 0.75rem;
+
+    .qty {
+        background-color: transparent;
+        color: $white;
+        box-shadow: none;
+        padding: 0.75rem 1.25rem;
+    }
+}

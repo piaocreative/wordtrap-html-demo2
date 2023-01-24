@@ -16,8 +16,10 @@
 -----------------------------------------------------------------*/
 
 
-/* Category
+/* ----------------------------------------------------------------
+	Category
 -----------------------------------------------------------------*/
+
 .category {
 	li {
 		a {
@@ -63,8 +65,10 @@
 }
 
 
-/* Product
+/* ----------------------------------------------------------------
+	Product
 -----------------------------------------------------------------*/
+
 .product {
 	margin-bottom: $spacer * 1.875;
 	position: relative;	
@@ -192,7 +196,8 @@
 		}
 
 		&:hover,
-		&:active {
+		&:active,
+		&.active {
 			background-color: transparent;
 			color: $white;
 
@@ -295,8 +300,215 @@
 }
 
 
-/* Product Ads
+/* ----------------------------------------------------------------
+	Product Ads
 -----------------------------------------------------------------*/
+
 .product-ads {
 	margin-bottom: $spacer * 1.875;
+}
+
+
+/* ----------------------------------------------------------------
+	Product Filters
+-----------------------------------------------------------------*/
+
+.product-filters {
+	.filter-title {
+		color: $heading-color;    
+		font-size: .875rem;
+		font-family: $body-font;
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 0.75rem;
+	}
+
+	ul li ul {
+		padding-left: 2.25rem;
+	}
+
+	.product-filter-color {
+		ul li {
+			display: inline-block;
+			margin-right: 5px;
+
+			.filter-color {
+				width: 1.875rem;
+				height: 1.875rem;
+				margin: 0;
+				border: none;
+
+				&:checked::after {
+					top: 8px;
+					left: 12px;
+					width: 6px;
+					height: 10px;
+				}
+
+				&#color_ffffff {
+					border: 1px solid #dcdcdc;
+
+					&:checked::after {
+						border-color: #373737;
+					}
+				}
+			}
+		}
+	}
+	
+	.product-filter-size {
+		ul li {
+			display: inline-block;
+			position: relative;
+			margin-right: 5px;
+
+			.filter-size {
+				width: 3.125rem;
+				height: 2.5rem;
+				margin: 0;
+				border: none;
+
+				& + label {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					z-index: 1;
+
+					@include translate3d(-50%, -50%, 0);
+				}
+
+				&:checked {
+					background-color: $theme-color;
+					color: $white;
+
+					& + label {
+						color: $white;
+					}
+
+					&::after {
+						display: none;
+					}
+				}				
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Reviews
+-----------------------------------------------------------------*/
+
+#reviews {
+	#comments {
+		.reviews-title {
+			font-size: 1.125rem;
+			
+			span {
+				color: $body-color;
+				font-family: $body-font;
+				font-size: 0.875rem;
+				font-weight: 400;
+				margin-left: 0.625rem;
+			}
+		}
+
+		ul.comment-list {
+			.review {
+				margin-bottom: 1.125rem;
+
+				.comment-container {
+					display: flex;
+
+					.comment-text {
+						margin-left: 1.125rem;
+						padding-top: 0.3125rem;
+
+						.meta {
+							line-height: 1;
+							margin-bottom: 0;
+
+							.review-author {
+								color: $heading-color;
+							}
+
+							.review-date {
+								margin-left: 0.5rem;
+							}
+						}
+
+						.description {
+							p {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+
+				.rating {
+					.star-rating {
+						i {
+							color: $theme-color;
+							font-size: 0.75rem;
+						}
+					}
+
+					.rating-text {
+						color: $heading-color;
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+
+	#review_form {
+		margin-top: 2.25rem;
+		padding: 1.875rem 0;
+
+		@include border-radius(0.5rem);
+
+		.comment-respond {
+			.comment-form {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Shop Table
+-----------------------------------------------------------------*/
+
+.shop-table {
+	td, th {			
+		padding: 1rem;
+	}
+
+	thead {
+		tr {
+			th {
+				border: none;
+				font-weight: 600;
+				font-size: 0.75rem;
+				line-height: 1;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				border-bottom-width: 5px;
+				border-color: transparent;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	& > :not(:last-child) > :last-child > * {
+		border-bottom-color: transparent;
+	}
 }

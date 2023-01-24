@@ -17,52 +17,50 @@
 
 
 // Bootstrap
-@import "scss/bootstrap/bootstrap";
+@import "bootstrap/bootstrap";
 
 
 // Core CSS
 @import "demo/typography";
 
 
-#demo2 {
-
-    // Content Blocks
-    @import "demo/topbar";
-    @import "demo/header";
-    @import "demo/banner";
-    @import "demo/blog";
-    @import "demo/shop";
-    @import "demo/404";
+// Content Blocks
+@import "demo/topbar";
+@import "demo/header";
+@import "demo/banner";
+@import "demo/blog";
+@import "demo/shop";
+@import "demo/404";
 
 
-    // Footer
-    @import "demo/footer";
+// Footer
+@import "demo/footer";
 
 
-    // Page Title
-    @import "demo/pagetitle";
+// Page
+@import "demo/page";
 
 
-    // Form
-    @import "demo/form";
+// Form
+@import "demo/form";
 
 
-    // Widgets
-    @import "demo/widgets";
+// Widgets
+@import "demo/widgets";
 
 
-    // Utilities
-    @import "demo/utilities";
+// Utilities
+@import "demo/utilities";
 
 
-    // Shortcodes
-    @import "demo/shortcodes/feature-box";
-    @import "demo/shortcodes/headings";
-    @import "demo/shortcodes/logos";
-    @import "demo/shortcodes/icon-box";
-    @import "demo/shortcodes/timeline";
+// Shortcodes
+@import "demo/shortcodes/feature-box";
+@import "demo/shortcodes/headings";
+@import "demo/shortcodes/logos";
+@import "demo/shortcodes/icon-box";
+@import "demo/shortcodes/timeline";
+@import "demo/shortcodes/socials";
 
 
-    // Extras
-    @import "demo/extras";
-}
+// Extras
+@import "demo/extras";
