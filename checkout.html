@@ -1,7 +1,6 @@
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
-
     <!-- Meat Tags
     ============================================= -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -201,179 +200,183 @@
 
         </header><!-- #header -->
 
-        <!-- Banner
-        ============================================= -->
-        <section id="banner" class="page-banner">
-
-            <div class="banner-content">
-
-                <div class="container">
-
-                    <div id="page-title">
-                        <h1 class="title">Checkout</h1>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section><!-- #banner -->
-
         <!-- Content
 		============================================= -->
 		<main id="content">
 
             <div class="page-content">           
-                
-                <div class="container">
 
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <form name="checkout" method="post" class="checkout" action="/" enctype="multipart/form-data" novalidate="novalidate">
-                                <h3>Billing details</h3>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_first_name">First name</label>
-                                    <div class="required-field">
-                                        <input type="text" value="" class="form-control" name="billing_first_name" id="billing_first_name" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_last_name">Last name</label>
-                                    <div class="required-field">
-                                        <input type="text" value="" class="form-control" name="billing_last_name" id="billing_last_name" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_company">Company name</label>
-                                    <div>
-                                        <input type="text" value="" class="form-control" name="billing_company" id="billing_company" required="">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_country">Country / Region</label>
-                                    <div class="required-field">
-                                        <input type="text" value="" class="form-control" name="billing_country" id="billing_country" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_address_1">Street address</label>
-                                    <div class="required-field">
-                                        <input type="text" value="" class="form-control" name="billing_address_1" id="billing_address_1" required="required">
-                                    </div>
-                                    <div class="required-field mt-2">
-                                        <input type="text" value="" class="form-control" name="billing_address_2" id="billing_address_2" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_city">Town / City</label>
-                                    <div class="required-field">
-                                        <input type="text" value="" class="form-control" name="billing_city" id="billing_city" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_state">Province</label>
-                                    <div class="required-field">
-                                        <input type="text" value="" class="form-control" name="billing_state" id="billing_state" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_postcode">Postal code</label>
-                                    <div class="required-field">
-                                        <input type="text" value="" class="form-control" name="billing_postcode" id="billing_postcode" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_phone">Phone</label>
-                                    <div class="required-field">
-                                        <input type="tel" value="" class="form-control" name="billing_phone" id="billing_phone" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="billing_email">Email address</label>
-                                    <div class="required-field">
-                                        <input type="email" value="" class="form-control" name="billing_email" id="billing_email" required="required">
-                                    </div>                                        
-                                </div>
-                                <div class="mb-5">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="create_account" id="create_account">
-                                        <label class="form-check-label" for="create_account">Create an account?</label>
-                                    </div>                            
-                                </div>
-                                <h3>Additional information</h3>
-                                <div class="mb-3">
-                                    <label class="form-label" for="order_comments">Order notes</label>
-                                    <div>
-                                        <textarea maxlength="5000" rows="8" class="form-control" name="order_comments" id="order_comments" required="" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                                    </div>                                        
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="order-details">
-                                <h3>Your Order</h3>
-                                <table cellspacing="0" class="table shop-table">     
-                                    <thead>
-                                        <tr>
-                                            <th class="product-name">Product</th>
-                                            <th class="product-total">Subtotal</th>
-                                        </tr>
-                                    </thead>    
-                                    <tbody>
-                                        <tr class="cart_item">
-                                            <td class="product-name">Man's Shoes&nbsp;<strong class="product-quantity">×&nbsp;5</strong></td>
-                                            <td class="product-total">$9.99</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr class="cart-subtotal">
-                                            <th>Subtotal</th>
-                                            <td>$49.95</td>
-                                        </tr>
-                                        <tr class="shipping">
-                                            <td colspan="2">
-                                                <p class="text-uppercase mb-1">Shipping</p>
-                                                <div class="shipping-method">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_free" checked>
-                                                        <label class="form-check-label" for="shipping_method_free">Free Shipping</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_local">
-                                                        <label class="form-check-label" for="shipping_method_local">Local Pickup</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_flat">
-                                                        <label class="form-check-label" for="shipping_method_flat">Flat rate: $5.00</label>
-                                                    </div>
-                                                </div>                                                
-                                            </td>
-                                        </tr>
-                                        <tr class="order-total">
-                                            <th>Total</th>
-                                            <td>$49.95</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>  
-                                <div class="checkout-payment mb-5">
-                                    <p class="text-uppercase mb-1">Payment Methods</p>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="payment_method" id="payment_method_cash" checked>
-                                        <label class="form-check-label" for="payment_method_cash">Cash on delivery</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="payment_method" id="payment_method_paypal">
-                                        <label class="form-check-label" for="payment_method_paypal">Paypal</label>
-                                    </div>
-                                    <img src="images/payments/payments.png" class="img-fluid" alt="Payments">
-                                </div>
-                                <a href="checkout.html" class="btn btn-primary">Place Order</a>
+                <!-- Banner
+                ============================================= -->
+                <section id="banner" class="page-banner">
+
+                    <div class="banner-content">
+
+                        <div class="container">
+
+                            <div id="page-title">
+                                <h1 class="title">Checkout</h1>
                             </div>
+
                         </div>
-                    </div>                    
 
-                </div><!-- .container -->                
+                    </div>
 
+                </section><!-- #banner -->
+
+                <div class="section">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <form name="checkout" method="post" class="checkout" action="/" enctype="multipart/form-data" novalidate="novalidate">
+                                    <h3>Billing details</h3>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_first_name">First name</label>
+                                        <div class="required-field">
+                                            <input type="text" value="" class="form-control" name="billing_first_name" id="billing_first_name" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_last_name">Last name</label>
+                                        <div class="required-field">
+                                            <input type="text" value="" class="form-control" name="billing_last_name" id="billing_last_name" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_company">Company name</label>
+                                        <div>
+                                            <input type="text" value="" class="form-control" name="billing_company" id="billing_company" required="">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_country">Country / Region</label>
+                                        <div class="required-field">
+                                            <input type="text" value="" class="form-control" name="billing_country" id="billing_country" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_address_1">Street address</label>
+                                        <div class="required-field">
+                                            <input type="text" value="" class="form-control" name="billing_address_1" id="billing_address_1" required="required">
+                                        </div>
+                                        <div class="required-field mt-2">
+                                            <input type="text" value="" class="form-control" name="billing_address_2" id="billing_address_2" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_city">Town / City</label>
+                                        <div class="required-field">
+                                            <input type="text" value="" class="form-control" name="billing_city" id="billing_city" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_state">Province</label>
+                                        <div class="required-field">
+                                            <input type="text" value="" class="form-control" name="billing_state" id="billing_state" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_postcode">Postal code</label>
+                                        <div class="required-field">
+                                            <input type="text" value="" class="form-control" name="billing_postcode" id="billing_postcode" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_phone">Phone</label>
+                                        <div class="required-field">
+                                            <input type="tel" value="" class="form-control" name="billing_phone" id="billing_phone" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="billing_email">Email address</label>
+                                        <div class="required-field">
+                                            <input type="email" value="" class="form-control" name="billing_email" id="billing_email" required="required">
+                                        </div>                                        
+                                    </div>
+                                    <div class="mb-5">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="create_account" id="create_account">
+                                            <label class="form-check-label" for="create_account">Create an account?</label>
+                                        </div>                            
+                                    </div>
+                                    <h3>Additional information</h3>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="order_comments">Order notes</label>
+                                        <div>
+                                            <textarea maxlength="5000" rows="8" class="form-control" name="order_comments" id="order_comments" required="" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                        </div>                                        
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="order-details">
+                                    <h3>Your Order</h3>
+                                    <table cellspacing="0" class="table shop-table">     
+                                        <thead>
+                                            <tr>
+                                                <th class="product-name">Product</th>
+                                                <th class="product-total">Subtotal</th>
+                                            </tr>
+                                        </thead>    
+                                        <tbody>
+                                            <tr class="cart_item">
+                                                <td class="product-name">Man's Shoes&nbsp;<strong class="product-quantity">×&nbsp;5</strong></td>
+                                                <td class="product-total">$9.99</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="cart-subtotal">
+                                                <th>Subtotal</th>
+                                                <td>$49.95</td>
+                                            </tr>
+                                            <tr class="shipping">
+                                                <td colspan="2">
+                                                    <p class="text-uppercase mb-1">Shipping</p>
+                                                    <div class="shipping-method">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_free" checked>
+                                                            <label class="form-check-label" for="shipping_method_free">Free Shipping</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_local">
+                                                            <label class="form-check-label" for="shipping_method_local">Local Pickup</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="shipping_method" id="shipping_method_flat">
+                                                            <label class="form-check-label" for="shipping_method_flat">Flat rate: $5.00</label>
+                                                        </div>
+                                                    </div>                                                
+                                                </td>
+                                            </tr>
+                                            <tr class="order-total">
+                                                <th>Total</th>
+                                                <td>$49.95</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>  
+                                    <div class="checkout-payment mb-5">
+                                        <p class="text-uppercase mb-1">Payment Methods</p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="payment_method" id="payment_method_cash" checked>
+                                            <label class="form-check-label" for="payment_method_cash">Cash on delivery</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="payment_method" id="payment_method_paypal">
+                                            <label class="form-check-label" for="payment_method_paypal">Paypal</label>
+                                        </div>
+                                        <img src="images/payments/payments.png" class="img-fluid" alt="Payments">
+                                    </div>
+                                    <a href="checkout.html" class="btn btn-primary">Place Order</a>
+                                </div>
+                            </div>
+                        </div>                    
+    
+                    </div>
+
+                </div>
+                
             </div><!-- .page-content -->
 
         </main><!-- #content -->

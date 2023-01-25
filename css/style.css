@@ -101,6 +101,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  color: #FFFFFF;
 }
 
 h1, .h1 {
@@ -5441,6 +5442,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 1.0625rem;
+  color: #FFFFFF;
   background-color: #f0f0f0;
   border-bottom: 1px solid #d8d8d8;
   border-top-left-radius: calc(0.3rem - 1px);
@@ -9950,7 +9952,7 @@ q::after {
   z-index: 199;
 }
 @media (min-width: 992px) {
-  #header.transparent-header + #banner {
+  #header.transparent-header + #content {
     top: -5.25rem;
     margin-bottom: -5.25rem;
     position: relative;
@@ -10065,9 +10067,6 @@ q::after {
 }
 
 /* ----------------------------------------------------------------
-	Mega Menu
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
 	Top Links
 -----------------------------------------------------------------*/
 @media (min-width: 992px) {
@@ -10166,15 +10165,6 @@ q::after {
   padding-right: 0;
 }
 
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
 /* ----------------------------------------------------------------
 
 	banner.scss
@@ -10327,7 +10317,8 @@ q::after {
   font-size: 0.875rem;
 }
 
-/* Single Post
+/* ----------------------------------------------------------------
+	Single Post
 -----------------------------------------------------------------*/
 #single-post .post .post-content {
   padding: 2.5rem 0;
@@ -10359,7 +10350,8 @@ q::after {
   border-radius: 0.5rem;
 }
 
-/* Post Comments
+/* ----------------------------------------------------------------
+	Post Comments
 -----------------------------------------------------------------*/
 .comments {
   margin-top: 1.875rem;
@@ -10921,14 +10913,6 @@ q::after {
 -----------------------------------------------------------------*/
 .page-content {
   overflow: hidden;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
-}
-@media (min-width: 992px) {
-  .page-content {
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
-  }
 }
 
 /* ----------------------------------------------------------------
@@ -11000,20 +10984,20 @@ q::after {
   padding: 3rem;
 }
 
-#single-member .team-member {
+#single-member-page .team-member {
   padding: 0;
 }
-#single-member .team-member .member-details {
+#single-member-page .team-member .member-details {
   padding: 0 3rem 3rem 3rem;
 }
-#single-member .member-services {
+#single-member-page #member-services {
   padding: 5rem 0 3.125rem;
 }
-#single-member .member-services .member-service {
+#single-member-page #member-services .member-service {
   padding-left: 2.25rem;
   position: relative;
 }
-#single-member .member-services .member-service::before {
+#single-member-page #member-services .member-service::before {
   content: "";
   background-image: url("data:image/svg+xml,%3csvg width='34' height='28' viewBox='0 0 34 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M32.9175 0.669397C32.1147 0.0960544 31.0826 0.210723 30.5092 1.0134L13.6507 22.9151L3.78784 14.4296C3.09974 13.8563 1.95289 13.8563 1.37947 14.5443C0.806054 15.2323 0.806061 16.379 1.49416 16.9523L12.7332 26.5845C13.0772 26.8138 13.4213 27.0432 13.88 27.0432C13.9947 27.0432 13.9947 27.0432 14.1094 27.0432C14.5681 27.0432 15.0269 26.6992 15.2562 26.3552L33.1469 2.96277C33.835 2.38943 33.7203 1.24274 32.9175 0.669397Z' fill='%23d19ca3'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -11025,22 +11009,22 @@ q::after {
   left: 0;
   top: 0;
 }
-#single-member .member-services .member-service h3, #single-member .member-services .member-service .h3 {
+#single-member-page #member-services .member-service h3, #single-member-page #member-services .member-service .h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   margin-bottom: 1.375rem;
 }
-#single-member .member-portfolios {
+#single-member-page #member-portfolios {
   padding-top: 5rem;
 }
-#single-member .member-portfolios .member-portfolio {
+#single-member-page #member-portfolios .member-portfolio {
   margin-bottom: 1.875rem;
 }
-#single-member .member-portfolios .member-portfolio img {
+#single-member-page #member-portfolios .member-portfolio img {
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
 }
-#single-member .member-portfolios .member-portfolio h3, #single-member .member-portfolios .member-portfolio .h3 {
+#single-member-page #member-portfolios .member-portfolio h3, #single-member-page #member-portfolios .member-portfolio .h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   margin-bottom: 0;
@@ -11617,6 +11601,9 @@ input[type=radio]:checked::after,
 /*-----------------------------------------------------------------------------------
 	utilities.scss
 -----------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Custom Fonts
+-----------------------------------------------------------------*/
 .body-font {
   font-family: "Montserrat", sans-serif !important;
 }
@@ -11633,10 +11620,16 @@ input[type=radio]:checked::after,
   color: #000 !important;
 }
 
+/* ----------------------------------------------------------------
+	Image
+-----------------------------------------------------------------*/
 img.img-full {
   width: 100%;
 }
 
+/* ----------------------------------------------------------------
+	Section
+-----------------------------------------------------------------*/
 .section {
   position: relative;
   padding-top: 3.125rem;

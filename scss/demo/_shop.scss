@@ -315,7 +315,7 @@
 
 .product-filters {
 	.filter-title {
-		color: $heading-color;    
+		color: $headings-color;    
 		font-size: .875rem;
 		font-family: $body-font;
 		font-weight: 600;
@@ -429,7 +429,7 @@
 							margin-bottom: 0;
 
 							.review-author {
-								color: $heading-color;
+								color: $headings-color;
 							}
 
 							.review-date {
@@ -454,7 +454,7 @@
 					}
 
 					.rating-text {
-						color: $heading-color;
+						color: $headings-color;
 						font-size: 0.75rem;
 					}
 				}

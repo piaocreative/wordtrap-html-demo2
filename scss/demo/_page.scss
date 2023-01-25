@@ -48,13 +48,13 @@
 
 .page-content {
     overflow: hidden;
-	padding-top: $spacer * 3.125;
-	padding-bottom: $spacer * 3.125;
+	// padding-top: $spacer * 3.125;
+	// padding-bottom: $spacer * 3.125;
 
-	@include media-breakpoint-up(lg) {
-		padding-top: 6.25rem;
-		padding-bottom: 6.25rem;
-	}	
+	// @include media-breakpoint-up(lg) {
+	// 	padding-top: 6.25rem;
+	// 	padding-bottom: 6.25rem;
+	// }	
 }
 
 
@@ -144,7 +144,7 @@
 	}
 }
 
-#single-member {
+#single-member-page {
 	.team-member {		
 		padding: 0;
 
@@ -153,7 +153,7 @@
 		}
 	}
 
-	.member-services {
+	#member-services {
 		padding: 5rem 0 3.125rem;
 
 		.member-service {
@@ -181,7 +181,7 @@
 		}
 	}
 
-	.member-portfolios {
+	#member-portfolios {
 		padding-top: 5rem;
 
 		.member-portfolio {
@@ -442,7 +442,7 @@
 				display: block;
 
 				a {
-					color: $heading-color;
+					color: $headings-color;
 					font-weight: 600;
 				}
 			}
