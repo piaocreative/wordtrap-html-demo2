@@ -56,14 +56,14 @@ html {
 	@include media-breakpoint-down(lg) {
 		font-size: 85%;
 	}
-  
+
 	/*--------------------------------------------------------------
 	## Mobile
 	--------------------------------------------------------------*/
 	@include media-breakpoint-down(md) {
 		font-size: 80%;
 	}
-	
+
 	/*--------------------------------------------------------------
 	## Mini
 	--------------------------------------------------------------*/
@@ -127,7 +127,7 @@ small { font-family: $body-font; }
 ul { margin: 0; }
 ul li { list-style: none; }
 
-i { 
+i {
 	display: inline-block;
 	line-height: inherit;
 }

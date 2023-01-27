@@ -12,7 +12,7 @@
 .timeline {
 	.events-wrapper {
 		overflow: hidden;
-		
+
 		.events {
 			.slick-track {
 				position: relative;
@@ -24,7 +24,7 @@
 					left: 4.25rem;
 					top: 11.625rem;
 					width: calc(100% - 8.5rem);
-					height: 3px; 
+					height: 3px;
 				}
 			}
 
@@ -57,7 +57,7 @@
 					position: absolute;
 					left: 5.625rem;
 					top: 0.5625rem;
-					
+
 					@include transition(all 0.3s ease-in-out);
 					@include rotate(-20deg);
 				}

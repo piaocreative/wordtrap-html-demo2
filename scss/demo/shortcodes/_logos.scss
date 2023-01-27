@@ -15,7 +15,7 @@
 		width: 100%;
 		text-align: center;
 		opacity: 0.5;
-		
+
 		@include transition(opacity 0.3s ease-in-out);
 
 		&:hover {
@@ -27,4 +27,4 @@
 			max-height: 4.625rem;
 		}
 	}
-} 
+}
