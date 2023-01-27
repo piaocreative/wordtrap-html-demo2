@@ -99,31 +99,31 @@ img {
 -----------------------------------------------------------------*/
 
 .slider.slider-horizontal {
-    width: 100%;
+	width: 100%;
 
-    .slider-track {
-        height: 5px;
-    }
+	.slider-track {
+		height: 5px;
+	}
 }
 
 .slider-track {
-    background-color: $light;
-    background-image: none;
+	background-color: $light;
+	background-image: none;
 
-    @include box-shadow(none);
+	@include box-shadow(none);
 }
 
 .slider-selection,
 .slider-handle {
-    background-color: $theme-color;
-    background-image: none;
+	background-color: $theme-color;
+	background-image: none;
 
-    @include box-shadow(none);
+	@include box-shadow(none);
 }
 
 .slider-handle {
-    width: 14px;
-    height: 14px;
+	width: 14px;
+	height: 14px;
 }
 
 

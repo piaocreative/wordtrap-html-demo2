@@ -11,28 +11,28 @@
 
 
 .social-share {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-    a {
-        background-color: #110d1f;					
-        color: #625c76;
-        display: block;
-        line-height: 2.625rem;
-        width: 2.625rem;
-        height: 2.625rem;		
-        text-align: center;
-        margin-right: 0.5rem;
+	a {
+		background-color: #110d1f;					
+		color: #625c76;
+		display: block;
+		line-height: 2.625rem;
+		width: 2.625rem;
+		height: 2.625rem;		
+		text-align: center;
+		margin-right: 0.5rem;
 
-        &:last-child {
-            margin: 0;
-        }
-        
-        @include transition(all 0.3s ease-in-out);
+		&:last-child {
+			margin: 0;
+		}
+		
+		@include transition(all 0.3s ease-in-out);
 
-        &:hover {
-            background-color: $theme-color;
-            color: $white;
-        }
-    }
+		&:hover {
+			background-color: $theme-color;
+			color: $white;
+		}
+	}
 }

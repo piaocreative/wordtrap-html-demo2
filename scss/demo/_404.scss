@@ -12,14 +12,14 @@
 
 
 .error404 {
-    position: relative;
+	position: relative;
 
-    .btn {
-        position: absolute;
-        bottom: 10.75rem;
-        left: 50%;        
-        z-index: 1;
+	.btn {
+		position: absolute;
+		bottom: 10.75rem;
+		left: 50%;
+		z-index: 1;
 
-        @include translateX(-50%);
-    }
+		@include translateX(-50%);
+	}
 }

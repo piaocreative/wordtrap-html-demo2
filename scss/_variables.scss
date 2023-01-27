@@ -12,30 +12,30 @@
 
 //-------------------- Base Colors --------------------//
 
-$theme-color:                   #d19ca3;
-$body-color:                    #FFFFFF;
-$headings-color:                 #FFFFFF;
-
-$body-bg:                       #201b30;
+$theme-color:								#d19ca3;
 
 
 //-------------------- Font Families --------------------//
 
-$body-font:                     'Montserrat', sans-serif;
-$heading-font:                  'Syncopate', sans-serif;
-$third-font:                    'Crafty Girls', cursive;
+$body-font:									'Montserrat', sans-serif;
+$heading-font:								'Syncopate', sans-serif;
+$third-font:								'Crafty Girls', cursive;
 
 
 //-------------------- Redefine Bootstrap Variables ------------//
 
+$body-color:								#FFFFFF;
+$headings-color:							#FFFFFF;
+$body-bg:									#201b30;
+
 // Theme Colors
-$primary:                       $theme-color;
-$secondary:                     #5b5571;
+$primary:									$theme-color;
+$secondary:									#5b5571;
 
 // Link
-$link-color:                    $theme-color;
-$link-decoration:				none;
-$link-hover-color:				$theme-color;
+$link-color:								$theme-color;
+$link-decoration:							none;
+$link-hover-color:							$theme-color;
 
 // Container Width
 $container-max-widths: (
@@ -43,149 +43,148 @@ $container-max-widths: (
 );
 
 // Border
-$border-radius:					0;
+$border-radius:								0;
 
 // Font sizes
-$font-size-base:                1.0625rem;
+$font-size-base:							1.0625rem;
 
-$h1-font-size:                  5.125rem;
-$h2-font-size:                  3rem;
-$h3-font-size:                  1.875rem;
-$h4-font-size:                  1.5rem;
-$h5-font-size:                  $font-size-base;
-$h6-font-size:                  0.75rem;
+$h1-font-size:								5.125rem;
+$h2-font-size:								3rem;
+$h3-font-size:								1.875rem;
+$h4-font-size:								1.5rem;
+$h5-font-size:								$font-size-base;
+$h6-font-size:								0.75rem;
 
 // Font Weight
-$font-weight-base:              300;
+$font-weight-base:							300;
 
 // Line Height
-$line-height-base:            	30 / 17;
-$line-height-sm:              	42 / 30;
-$line-height-lg:              	24 / 14;
+$line-height-base:							30 / 17;
+$line-height-sm:							42 / 30;
+$line-height-lg:							24 / 14;
 
 // Forms
-// $input-color:                   #d0d0d0;
-$input-color:                   #5b5571;
-$input-border-color:            $theme-color;
-$input-border-width:			      0;
-$input-btn-focus-color-opacity: 1;
+$input-color:								#5b5571;
+$input-border-color:						$theme-color;
+$input-border-width:						0;
+$input-btn-focus-color-opacity: 			1;
 
-$input-btn-padding-y:           1.5rem;
-$input-btn-padding-x:           2.125rem;
-$input-btn-font-size:           0.875rem;
+$input-btn-padding-y:						1.5rem;
+$input-btn-padding-x:						2.125rem;
+$input-btn-font-size:						0.875rem;
 
-$input-btn-padding-y-sm:        1rem;
-$input-btn-padding-x-sm:        1.416rem;
-$input-btn-font-size-sm:        0.583rem;
+$input-btn-padding-y-sm:					1rem;
+$input-btn-padding-x-sm:					1.416rem;
+$input-btn-font-size-sm:					0.583rem;
 
-$input-btn-padding-y-lg:        2rem;
-$input-btn-padding-x-lg:        2.83rem;
-$input-btn-font-size-lg:        1.16rem;
+$input-btn-padding-y-lg:					2rem;
+$input-btn-padding-x-lg:					2.83rem;
+$input-btn-font-size-lg:					1.16rem;
 
-$input-btn-line-height:         1;
+$input-btn-line-height:						1;
 
-$input-btn-focus-width:         1px;
-$input-focus-border-color:      $theme-color;
+$input-btn-focus-width:						1px;
+$input-focus-border-color:					$theme-color;
 
 // Buttons
-$btn-font-family:               $heading-font;
-$btn-padding-y:              	$input-btn-padding-y;
-$btn-padding-x:              	$input-btn-padding-x;
-$btn-font-size:              	$input-btn-font-size;
+$btn-font-family:							$heading-font;
+$btn-padding-y:								$input-btn-padding-y;
+$btn-padding-x:								$input-btn-padding-x;
+$btn-font-size:								$input-btn-font-size;
 
-$btn-padding-y-sm:              $input-btn-padding-y-sm;
-$btn-padding-x-sm:              $input-btn-padding-x-sm;
-$btn-font-size-sm:              $input-btn-font-size-sm;
+$btn-padding-y-sm:							$input-btn-padding-y-sm;
+$btn-padding-x-sm:							$input-btn-padding-x-sm;
+$btn-font-size-sm:							$input-btn-font-size-sm;
 
-$btn-padding-y-lg:              $input-btn-padding-y-lg;
-$btn-padding-x-lg:              $input-btn-padding-x-lg;
-$btn-font-size-lg:              $input-btn-font-size-lg;
+$btn-padding-y-lg:							$input-btn-padding-y-lg;
+$btn-padding-x-lg:							$input-btn-padding-x-lg;
+$btn-font-size-lg:							$input-btn-font-size-lg;
 
-$btn-font-weight:               700;
-$btn-line-height:               1;
+$btn-font-weight:							700;
+$btn-line-height:							1;
 
-$btn-border-width:              2px;
-$btn-border-radius:             0;
+$btn-border-width:							2px;
+$btn-border-radius:							0;
 
 
 // Tabs
 $nav-link-color:							#ffffff;
-$nav-tabs-border-color:                   	$theme-color;
-$nav-tabs-border-width:                  	2px;
-$nav-tabs-border-radius:                  	0;
-$nav-tabs-link-hover-border-color:        	$theme-color;
-$nav-tabs-link-active-color:              	$theme-color;
-$nav-tabs-link-active-border-color:       	$theme-color;
+$nav-tabs-border-color:					 	$theme-color;
+$nav-tabs-border-width:						2px;
+$nav-tabs-border-radius:					0;
+$nav-tabs-link-hover-border-color:		  	$theme-color;
+$nav-tabs-link-active-color:			  	$theme-color;
+$nav-tabs-link-active-border-color:		 	$theme-color;
 
 
 // Accordion
-$accordion-padding-y:                     	1.875rem;
-$accordion-padding-x:                     	2.25rem;
-$accordion-color:                         	$theme-color;
-$accordion-bg:                            	rgba($theme-color, 0.3);
-$accordion-border-width:                  	0;
-$accordion-border-radius:                 	0;
+$accordion-padding-y:						1.875rem;
+$accordion-padding-x:						2.25rem;
+$accordion-color:						 	$theme-color;
+$accordion-bg:							 	rgba($theme-color, 0.3);
+$accordion-border-width:					0;
+$accordion-border-radius:				  	0;
 
-$accordion-button-color:                  	$body-color;
-$accordion-button-bg:                     	transparent;
-$accordion-button-active-bg:              	transparent;
-$accordion-button-active-color:           	$theme-color;
+$accordion-button-color:					$body-color;
+$accordion-button-bg:						transparent;
+$accordion-button-active-bg:			  	transparent;
+$accordion-button-active-color:			  	$theme-color;
 
-$accordion-button-focus-border-color:     	none;
-$accordion-button-focus-box-shadow:       	none;
+$accordion-button-focus-border-color:	  	none;
+$accordion-button-focus-box-shadow:		 	none;
 
-$accordion-icon-width:                    	1.25rem;
-$accordion-icon-color:                    	$body-color;
+$accordion-icon-width:					  	1.25rem;
+$accordion-icon-color:					  	$body-color;
 
 
 // Pagination
 $pagination-bg:								transparent;
-$pagination-padding-y:                    	1rem;
-$pagination-padding-x:                    	1rem;
-$pagination-border-radius:                	0.5rem;
-$pagination-border-width:                 	0;
+$pagination-padding-y:					  	1rem;
+$pagination-padding-x:					 	1rem;
+$pagination-border-radius:				 	0.5rem;
+$pagination-border-width:				  	0;
 
-$pagination-hover-color:                  	#FFFFFF;
-$pagination-hover-bg:                     	$theme-color;
+$pagination-hover-color:					#FFFFFF;
+$pagination-hover-bg:						$theme-color;
 
-$pagination-active-color:                 	#FFFFFF;
-$pagination-active-bg:                    	$theme-color;
+$pagination-active-color:					#FFFFFF;
+$pagination-active-bg:					  	$theme-color;
 
 
 //-------------------- Top Bar --------------------//
 
-$topbar-height:                 2.8125rem;
-$topbar-line-height:            2.8125rem;
-$topbar-color:                  #5b5571;
-$topbar-hover-color:            $theme-color;
+$topbar-height:							  	2.8125rem;
+$topbar-line-height:						2.8125rem;
+$topbar-color:								#5b5571;
+$topbar-hover-color:						$theme-color;
 
 
 //-------------------- Header --------------------//
 
-$header-height:                 5.25rem;
+$header-height:								5.25rem;
 
 // Sticky Header
-$sticky-header-height:          2.8125rem;
+$sticky-header-height:						2.8125rem;
 
 
 //-------------------- Primary Menu --------------------//
 
-$primary-menu-padding:			2.8125rem;
-$sticky-menu-padding:			1.875rem;
+$primary-menu-padding:						2.8125rem;
+$sticky-menu-padding:						1.875rem;
 
-$primary-menu-font:             $body-font;
-$primary-menu-font-weight:      400;
-$primary-menu-font-size:        0.875rem;
-$primary-menu-font-tt:          initial;
-$primary-menu-font-color:       #FFFFFF;
-$primary-menu-font-spacing:     0;
+$primary-menu-font:							$body-font;
+$primary-menu-font-weight:					400;
+$primary-menu-font-size:					0.875rem;
+$primary-menu-font-tt:						initial;
+$primary-menu-font-color:					#FFFFFF;
+$primary-menu-font-spacing:					0;
 
 // top Button
-$top-btn-font-size:        		1.125rem;
-$top-btn-font-color:       		$headings-color;
+$top-btn-font-size:					  		1.125rem;
+$top-btn-font-color:				 		$headings-color;
 
 // Dropdown BG
-$dropdown-bg:					#252525;
+$dropdown-bg:								#252525;
 
 
 //-------------------- Section --------------------//
@@ -200,82 +199,3 @@ $external-link-icon: url("data:image/svg+xml,<svg width='18' height='18' viewBox
 $checker-icon: url("data:image/svg+xml,<svg width='34' height='28' viewBox='0 0 34 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32.9175 0.669397C32.1147 0.0960544 31.0826 0.210723 30.5092 1.0134L13.6507 22.9151L3.78784 14.4296C3.09974 13.8563 1.95289 13.8563 1.37947 14.5443C0.806054 15.2323 0.806061 16.379 1.49416 16.9523L12.7332 26.5845C13.0772 26.8138 13.4213 27.0432 13.88 27.0432C13.9947 27.0432 13.9947 27.0432 14.1094 27.0432C14.5681 27.0432 15.0269 26.6992 15.2562 26.3552L33.1469 2.96277C33.835 2.38943 33.7203 1.24274 32.9175 0.669397Z' fill='#{$theme-color}'/></svg>");
 $arrow-up-icon: url("data:image/svg+xml,<svg width='21' height='12' viewBox='0 0 21 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M19.3999 10.5L10.3999 1.5L1.3999 10.5' stroke='#{$theme-color}' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/></svg>");
 $arrow-down-icon: url("data:image/svg+xml,<svg width='21' height='12' viewBox='0 0 21 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M19.3999 1.5L10.3999 10.5L1.3999 1.5' stroke='#{$theme-color}' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-
-
-//-------------------- Social Icons Colors --------------------//
-
-$facebook:                    #3B5998;
-$delicious:                   #205CC0;
-$paypal:                      #00588B;
-$flattr:                      #F67C1A;
-$android:                     #A4C639;
-$smashmag:                    #E53B2C;
-$gplus:                       #DD4B39;
-$wikipedia:                   #333333;
-$stumbleupon:                 #F74425;
-$foursquare:                  #25A0CA;
-$call:                        #444444;
-$ninetyninedesigns:           #F26739;
-$forrst:                      #5B9A68;
-$digg:                        #191919;
-$spotify:                     #81B71A;
-$reddit:                      #C6C6C6;
-$blogger:                     #FC4F08;
-$cc:                          #688527;
-$dribbble:                    #EA4C89;
-$evernote:                    #5BA525;
-$flickr:                      #FF0084;
-$google:                      #DD4B39;
-$instapaper:                  #333333;
-$klout:                       #FF5F52;
-$linkedin:                    #0E76A8;
-$vk:                          #2B587A;
-$rss:                         #EE802F;
-$skype:                       #00AFF0;
-$twitter:                     #00ACEE;
-$youtube:                     #C4302B;
-$vimeo:                       #86C9EF;
-$aim:                         #FCD20B;
-$yahoo:                       #720E9E;
-$email3:                      #6567A5;
-$macstore:                    #333333;
-$myspace:                     #666666;
-$podcast:                     #E4B21B;
-$cloudapp:                    #525557;
-$dropbox:                     #3D9AE8;
-$ebay:                        #89C507;
-$github:                      #171515;
-$googleplay:                  #DD4B39;
-$itunes:                      #222222;
-$plurk:                       #CF5A00;
-$pinboard:                    #0000E6;
-$soundcloud:                  #FF7700;
-$tumblr:                      #34526F;
-$wordpress:                   #1E8CBE;
-$yelp:                        #C41200;
-$intensedebate:               #009EE4;
-$eventbrite:                  #F16924;
-$scribd:                      #666666;
-$stripe:                      #008CDD;
-$print:                       #111111;
-$dwolla:                      #FF5C03;
-$statusnet:                   #131A30;
-$acrobat:                     #D3222A;
-$drupal:                      #27537A;
-$buffer:                      #333333;
-$pocket:                      #EE4056;
-$bitbucket:                   #0E4984;
-$stackoverflow:               #EF8236;
-$hackernews:                  #FF6600;
-$xing:                        #126567;
-$instagram:                   #3F729B;
-$quora:                       #A82400;
-$openid:                      #E16309;
-$steam:                       #111111;
-$amazon:                      #E47911;
-$disqus:                      #E4E7EE;
-$plancast:                    #222222;
-$appstore:                    #000000;
-$pinterest:                   #C8232C;
-$fivehundredpx:               #111111;
-$si_text_color:               #FFFFFF;

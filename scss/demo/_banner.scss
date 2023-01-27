@@ -16,84 +16,84 @@
 -----------------------------------------------------------------*/
 
 
-#banner {    
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: cover;
-    position: relative;
+#banner {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+	position: relative;
 
-    @include media-breakpoint-up(md) {
-        background-position: left top;
-    }
+	@include media-breakpoint-up(md) {
+		background-position: left top;
+	}
 
-    .banner-content {
-        padding-top: 6.25rem;
-        padding-bottom: 6.25rem;
+	.banner-content {
+		padding-top: 6.25rem;
+		padding-bottom: 6.25rem;
 
-        @include media-breakpoint-up(md) {
-            padding-top: 15rem;
-            padding-bottom: 11.125rem;
-        }
-    }
+		@include media-breakpoint-up(md) {
+			padding-top: 15rem;
+			padding-bottom: 11.125rem;
+		}
+	}
 
-    &.home-banner {
-        background-image: url(../images/banner/home_banner.jpg);
-        background-position: center;
+	&.home-banner {
+		background-image: url(../images/banner/home_banner.jpg);
+		background-position: center;
 
-        @include media-breakpoint-down(md) {
-            &::before {
-                content: "";
-                background-color: rgba($secondary, 0.7);
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
+		@include media-breakpoint-down(md) {
+			&::before {
+				content: "";
+				background-color: rgba($secondary, 0.7);
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
 
-        h1 {
-            font-weight: 400;
-            font-size: 5.125rem;
-            line-height: 5.75rem;
-            margin-bottom: 5.625rem;
-            position: relative;
+		h1 {
+			font-weight: 400;
+			font-size: 5.125rem;
+			line-height: 5.75rem;
+			margin-bottom: 5.625rem;
+			position: relative;
 
-            .onsale {
-                position: absolute;
-                left: 6.5rem;
-                top: 2.5rem;
-            }
-        }
+			.onsale {
+				position: absolute;
+				left: 6.5rem;
+				top: 2.5rem;
+			}
+		}
 
-        .product-price {
-            margin-bottom: $spacer * 1.875;            
-        }
+		.product-price {
+			margin-bottom: $spacer * 1.875;
+		}
 
-        .add-to-cart {
-            background-color: rgba($secondary, 0.43);
-        }
+		.add-to-cart {
+			background-color: rgba($secondary, 0.43);
+		}
 
-        .product-shipping {
-            color: $white;
-            display: flex;
-            align-items: center;
-            margin-bottom: $spacer * 1.875;
+		.product-shipping {
+			color: $white;
+			display: flex;
+			align-items: center;
+			margin-bottom: $spacer * 1.875;
 
-            &::before {
-                content: "";
-                background-image: escape-svg($free-shipping-icon);
-                background-size: 100%;
-                display: block;
-                width: 22.5px;
-                height: 18px;
-                margin-right: 0.625rem;
-            }
-        }
-    }
+			&::before {
+				content: "";
+				background-image: escape-svg($free-shipping-icon);
+				background-size: 100%;
+				display: block;
+				width: 22.5px;
+				height: 18px;
+				margin-right: 0.625rem;
+			}
+		}
+	}
 
-    &.page-banner {
-        background-image: url(../images/banner/page_banner_bg.png);
-        height: auto;
-    }
+	&.page-banner {
+		background-image: url(../images/banner/page_banner_bg.png);
+		height: auto;
+	}
 }
