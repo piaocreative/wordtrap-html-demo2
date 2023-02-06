@@ -5,7 +5,7 @@ $( document ).ready( function() {
 		$( '.logos' ).slick({
 			infinite: true,
 			slidesToShow: 5,
-			slidesToScroll: 5,
+			slidesToScroll: 1,
 			dots: false,
 			arrows: false,
 			responsive: [
@@ -14,7 +14,7 @@ $( document ).ready( function() {
 					settings: {
 						infinite: true,
 						slidesToShow: 4,
-						slidesToScroll: 4,
+						slidesToScroll: 1,
 					}
 				},
 				{
@@ -22,7 +22,7 @@ $( document ).ready( function() {
 					settings: {
 						infinite: true,
 						slidesToShow: 3,
-						slidesToScroll: 3,
+						slidesToScroll: 1,
 					}
 				},
 				{
@@ -30,7 +30,7 @@ $( document ).ready( function() {
 					settings: {
 						infinite: true,
 						slidesToShow: 2,
-						slidesToScroll: 2,
+						slidesToScroll: 1,
 					}
 				}
 			]
@@ -84,16 +84,25 @@ $( document ).ready( function() {
 	}
 
 	// QTY
-	$('.quantity  #plus-btn').click(function(evt) {
-		evt.preventDefault();
-		$('.qty').val(parseInt($('.qty').val()) + 1 );
-	});
-	$('.quantity #minus-btn').click(function(evt) {
-		evt.preventDefault();
-		$('.qty').val(parseInt($('.qty').val()) - 1 );
-		if ($('.qty').val() == 0) {
-			$('.qty').val(1);
-		}
-	});
+	if ( $('.quantity').length ) {
+		$('.quantity').each(function() {
+			var $this = $(this);
+			var $qty = $this.find('.qty');
+			var $plusBtn = $this.find('#plus-btn');
+			var $minusBtn = $this.find('#minus-btn');
+
+			$plusBtn.click(function(evt) {
+				evt.preventDefault();
+				$qty.val(parseInt($qty.val()) + 1 );
+			});
+			$minusBtn.click(function(evt) {
+				evt.preventDefault();
+				$qty.val(parseInt($qty.val()) - 1 );
+				if ($qty.val() == 0) {
+					$qty.val(1);
+				}
+			});
+		});
+	}
 
 } );
